@@ -1,0 +1,18 @@
+flowchart TD
+    A[Raw data] --> B[Staging]
+    B --> C[Data Quality / Forensics]
+    C --> D[Cleaned Data]
+    D --> E[Entity Resolution]
+    E --> F[Golden Dataset]
+    F --> G[Feature Engineering]
+    G --> H[Metrics Layer]
+    H --> I[Statistical Analysis]
+    I --> J[Investment / Counterfactual]
+    J --> K[Executive Dashboard]
+
+    C --> L[Duplicate detection]
+    C --> M[Timezone normalization]
+    E --> N[Canonical entities]
+    H --> O[Recovery metrics]
+    I --> P[Attribution tests]
+    J --> Q[Scenario model]
